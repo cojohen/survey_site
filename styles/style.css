@@ -47,10 +47,11 @@ body {
 }
 
 form {
-    background: #001b29;
+    //background: #001b29;
     padding: 2em;
     border-radius: 25px;
     margin: 2em auto;
+    background-image: linear-gradient(to bottom right, #001b29, #00293d);
     box-shadow: 0px 0px 20px #006da3;
 }
 
