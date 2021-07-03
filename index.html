@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+  --    Title:      index.html
+  --    Project:        
+  --    Author:     Joe Cohen
+  --    Contact:    <deskofjoe@gmail.com>
+  --    GitHub:     https://github.com/cojohen
+  --    
+  --    Copyright 2021 Joe Cohen -- Permission is hereby granted, free of
+  --    charge, to any person obtaining a copy of this software and 
+  --    associated documentation files (the "Software"), to deal in the 
+  --    Software without restriction, including without limitation the 
+  --    rights to use, copy, modify, merge, publish, distribute, sublicense,
+  --    and/or sell copies of the Software, and to permit persons to whom 
+  --    the Software is furnished to do so, subject to the following 
+  --    conditions:
+  --
+  --    The above copyright notice and this permission notice shall be included 
+  --    in all copies or substantial portions of the Software.
+  -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>A Survey</title>
+        <!-- CSS -->
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <!-- Javascript -->
+        <script src="scripts/main.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="main">
+            <h1 id="title">A Survey</h1>
+            <p id="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <form id="survey-form">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" maxlength="24" placeholder="Enter your name" required>
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+                <label for="number" id="number-label">Number</label>
+                <input id="number" type="number" min="1" max="999" placeholder="Enter a number between 1 and 999">
+                <label for="dropdown" id="drop-label">Select one</label>
+                <select id="dropdown">
+                    <option value="1">First option</option>
+                    <option value="2">Second option</option>
+                    <option value="3">Third option</option>
+                    <option value="4">Fourth option</option>
+                </select>
+                <p>Select shoe size</p> 
+                <label for="shoe-8">
+                    <input type="radio" id="shoe-8" name="shoesize" value="8">
+                8</label>
+                <label for="shoe-9">
+                    <input type="radio" id="shoe-9" name="shoesize" value="9">
+                9</label>
+                <label for="shoe-10">
+                    <input type="radio" id="shoe-10" name="shoesize" value="10">
+                10</label>
+                <label for="shoe-11">
+                    <input type="radio" id="shoe-11" name="shoesize" value="11">
+                11</label>
+                <label for="shoe-12">
+                    <input type="radio" id="shoe-12" name="shoesize" value="12">
+                12</label>
+
+                <p>Select shoe configuration</p> 
+                <label for="shoe-RR">
+                    <input type="radio" id="shoe-RR" name="shoeconfig" value="RR">
+                Two right shoes</label>
+                <label for="shoe-LL">
+                    <input type="radio" id="shoe-LL" name="shoeconfig" value="LL">
+                Two left shoes</label>
+                <label for="shoe-RL">
+                    <input type="radio" id="shoe-LR" name="shoeconfig" value="RL">
+                One right shoe and one left shoe</label>
+
+                <p>Select additional options</p>
+                <label for="shoe-opt-heely">
+                    <input type="checkbox" id="shoe-opt-heely" value="heely" checked>
+                Heelys</label>
+                <label for="shoe-opt-rhinestones">
+                    <input type="checkbox" id="shoe-opt-rhinestone" value="rhinestone">
+                Rhinestones</label>
+                <label for="shoe-opt-bouncy">
+                  <input type="checkbox" id="shoe-opt-bouncy" value="bouncy">
+                Bouncy Soles</label>
+                <label for="shoe-opt-taps">
+                    <input type="checkbox" id="shoe-opt-taps" value="taps">
+                Tap Dance Plates</label>
+
+                <textarea id="comments">Please enter additional instructions...</textarea>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+        <script type="text/javascript"></script>
+    </body>
+</html>
